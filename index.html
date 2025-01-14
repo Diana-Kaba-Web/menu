@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP NAV -->
+    <div class="btns">
+        <button class="basket">0</button>
+        <br>
+        <button class="btn" id="sign-in">Sign in</button>
+        <button class="btn" id="favourite">Favourite</button>
+    </div>
+
+    <!-- OVERLAY FOR BASKET -->
+    <div class="overlay">
+        <div class="content">
+            <h2>Basket is empty...</h2>
+            <button class="btn btn-clear" id="btn-clear">Clear</button>
+            <div class="cards-container"></div>
+        </div>
+    </div>
+
+    <!-- OVERLAY FOR SIGN IN -->
+    <div class="overlay2">
+        <div class="content2">
+            <h2>Sign in</h2>
+            <form action="" class="sign-in-form">
+                <fieldset>
+                    <label for="login">Login:</label>
+                    <input type="text" id="login" name="login">
+                    <br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password">
+                    <br>
+                    <button class="btn">Save</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <!-- OVERLAY FOR FAVOURITES -->
+    <div class="overlay3">
+        <div class="content3">
+            <h2>Favourite is empty...</h2>
+            <button class="btn btn-clear" id="btn-clear-favourite">Clear</button>
+            <div class="cards-favourite-container"></div>
+        </div>
+    </div>
+
+    <!-- MENU -->
+    <section class="menu">
+        <h2>Our popular menu</h2>
+        <label for="search">Search:</label>
+        <input type="text" class="search" id="search">
+        <h3 class="error">No results found!</h3>
+
+        <!-- CARDS start -->
+        <div class="cards">
+            <div class="card">
+                <img src="./images/ramen.jpg" alt="ramen">
+                <h4>Mie ramen</h4>
+                <p>lorem ipsum</p>
+                <span class="price">&dollar; 20.2</span>
+                <span class="fave">&hearts;</span>
+            </div>
+
+            <div class="card">
+                <img src="./images/salad.jpg" alt="salad">
+                <h4>Salad tahu</h4>
+                <p>lorem ipsum</p>
+                <span class="price">&dollar; 20.2</span>
+                <span class="fave">&hearts;</span>
+            </div>
+
+            <div class="card">
+                <img src="./images/roti.jpg" alt="roti">
+                <h4>Roti bakar</h4>
+                <p>lorem ipsum</p>
+                <span class="price">&dollar; 20.2</span>
+                <span class="fave">&hearts;</span>
+            </div>
+
+            <div class="card">
+                <img src="./images/spaghetti.jpg" alt="spaghetti">
+                <h4>Spaghetti</h4>
+                <p>lorem ipsum</p>
+                <span class="price">&dollar; 20.2</span>
+                <span class="fave">&hearts;</span>
+            </div>
+
+            <div class="card">
+                <img src="./images/ramen.jpg" alt="ramen">
+                <h4>Mie ramen</h4>
+                <p>lorem ipsum</p>
+                <span class="price">&dollar; 20.2</span>
+                <span class="fave">&hearts;</span>
+            </div>
+
+            <div class="card">
+                <img src="./images/salad.jpg" alt="salad">
+                <h4>Salad tahu</h4>
+                <p>lorem ipsum</p>
+                <span class="price">&dollar; 20.2</span>
+                <span class="fave">&hearts;</span>
+            </div>
+        </div>
+        <!-- CARDS end -->
+
+        <button class="btn btn-more">More menu</button>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
